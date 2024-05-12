@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.main
+{
+    background-image:url("images/netflix-bg.png");
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    height: 700px;
+    position: relative;
+}
+
+nav
+{
+    display: flex;
+    max-width: 80vw;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav img
+{
+    
+    position: relative;
+    z-index: 10;
+}
+
+.lang-btn
+{
+    width: 100px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+    background: none;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: medium;
+}
+
+.option{
+    color: black;
+    text-align: center;
+}
+
+.sign-in-btn
+{
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+    background-color: red;
+    color: white;
+    font-size: medium;
+    padding: 5px;
+}
+
+.screen
+{
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    top:0;
+    background-color: black;
+    opacity: 0.69;
+}
+
+.text{
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 200px);
+    gap: 20px;
+}
+
+.text>:nth-child(1){
+    font-size: 50px;
+    font-weight:bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.text>:nth-child(2){
+    font-size: 30px;
+    font-family: Arial, Helvetica,sans-serif; 
+}
+
+.text>:nth-child(3){
+    font-size: 20px;
+    font-family: Arial, Helvetica,sans-serif; 
+}
+
+.input .email{
+    background-color: black;
+    position: relative;
+    opacity: 0.5;
+    width: 300px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.input .get-started{
+    
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: large;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divider{
+    height: 7px;
+    background-color:rgb(46, 44, 44);
+    position: relative;
+}
+
+.section{
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.text-all
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    max-width: 50vw;
+    margin: auto;
+    color: white;
+   
+}
+.text-all>:nth-child(1){
+    font-size: 50px;
+    font-weight:bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.text-all>:nth-child(2){
+    font-size: 20px;
+    font-family: Arial, Helvetica,sans-serif; 
+}
+.text-all>:nth-child(3){
+    font-size: 20px;
+    font-family: Arial, Helvetica,sans-serif; 
+}
+.imgvideo1
+{
+    position: relative;
+}
+.imgvideo1 img
+{
+    width: 555px;
+    top:100px;
+    right: 150px;
+    position: relative;
+    z-index: 10;
+}
+.imgvideo1 video
+{
+    position:absolute;
+    top:100px;
+    right: 150px;
+    width: 553px;
+}
+
+.imgvideo2
+{
+    position: relative;
+}
+.imgvideo2 img
+{
+    width: 560px;
+    top:100px;
+    right: 150px;
+    position: relative;
+    z-index: 10;
+}
+.imgvideo2 video
+{
+    position:absolute;
+    top:130px;
+    right: 250px;
+    width: 330px;
+}
+
+
+.image{
+    position: relative;
+    left: 50px;
+}
+
+.boxshot{
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    position: relative;
+    left: 120px;
+    bottom: 150px;
+    background-color: black;
+    display: flex;
+}
+
+.box-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-text>:nth-child(1){
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-text>:nth-child(2){
+    color:rgb(29, 87, 220);
+    position: relative;
+    top: 20px;
+    left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.download-btn{
+    position: relative;
+    left: 80px;
+}
+
+.faq
+{
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq h2
+{
+    text-align: center;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.faqbox
+{
+    transition: all 1s ease-out;
+    background-color: #2d2d2d;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.faqbox:hover
+{
+    background-color:#414141 ;
+    color: white;
+
+}
+
+.faqbox svg
+{
+    filter: invert(1);
+}
+
+.membership p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    font-size: large;
+    margin: 10px;
+}
+
+.membership .input{
+    position: relative;
+    left: 500px;
+    margin-bottom: 100px;
+}
+
+footer
+{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions 
+{
+    padding: 34px 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+footer .questions a{
+    color: white;
+}
+
+.footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-item
+{
+    display: flex;
+    flex-direction: column;
+    gap:23px;
+}
+
+.footer a
+{
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-end>:nth-child(1){
+    position: relative;
+    top: 20px;
+}
+
+.footer-end>:nth-child(2){
+    position: relative;
+    top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
